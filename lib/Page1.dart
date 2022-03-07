@@ -106,7 +106,8 @@ class _Page1State extends State<Page1> {
                   ],
                 ),
               ),
-              
+              SizedBox(height: 20,),
+              Text('sffddsfdgdsdggqsdf', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
 
 
           ]
