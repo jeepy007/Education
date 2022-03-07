@@ -62,7 +62,51 @@ class _Page1State extends State<Page1> {
               
                   ],
                 ),
-              )
+              ),
+              SizedBox(height: 20,),
+              Text("TRENDING COURSES", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+              SizedBox(height: 20,),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 200,
+                          child: Image.network('https://previews.123rf.com/images/bialasiewicz/bialasiewicz1603/bialasiewicz160301780/54176876-schuss-aus-einer-gruppe-von-fokussierten-studenten-in-einem-computerraum.jpg'),
+                          
+                        ),
+                        Text('Cours en presentiel'),
+                      ],
+                    ),
+                     Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 200,
+                          child: Image.network('https://previews.123rf.com/images/bialasiewicz/bialasiewicz1603/bialasiewicz160301780/54176876-schuss-aus-einer-gruppe-von-fokussierten-studenten-in-einem-computerraum.jpg'),
+                          
+                        ),
+                        Text('Cours en ligne'),
+                      ],
+                    ),
+                     Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 200,
+                          child: Image.network('https://previews.123rf.com/images/bialasiewicz/bialasiewicz1603/bialasiewicz160301780/54176876-schuss-aus-einer-gruppe-von-fokussierten-studenten-in-einem-computerraum.jpg'),
+                          
+                        ),
+                        Text('Cours en presentiel'),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              
 
 
           ]
