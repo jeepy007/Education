@@ -13,106 +13,102 @@ class _Page1State extends State<Page1> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.black,
         title: Text("PROGRAMMATION", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
         centerTitle: true,
       
       ),
+      drawer: Drawer(
+        backgroundColor: Colors.black54,
+        child: ListView(
+          children: <Widget> [
+            new UserAccountsDrawerHeader(
+              accountName: Text('Jean_Philippe'),
+               accountEmail: Text('lordjeepy@gmail.com'),
+               currentAccountPicture:  GestureDetector(                                                                                                                                                                                                                                                         
+                 child: CircleAvatar(backgroundColor: Colors.white,
+                 child: Icon(Icons.person,
+                 color: Colors.black,),),
 
+               ),
+               ),
+               InkWell(
+                 onTap: ()  {},
+                 child: ListTile(
+                   title : 
+                  new Text("PROGRAMMATION WEB", style: TextStyle(fontSize: 15, color: Colors.white),),
+                  leading: Icon(Icons.school, color: Colors.amber,),
+                 )
+                 
+               ),
+               Divider(
+                 color: Colors.white,
+                
+               ),
+               InkWell(
+                 onTap: ()  {},
+                 child: ListTile(
+                   title : 
+                  new Text("PROGRAMMATION MOBILE", style: TextStyle(fontSize: 15, color: Colors.white),),
+                  leading: Icon(Icons.school, color: Colors.amber,),
+                 )
+                 
+               ),
+               Divider(
+                 color: Colors.white,
+                
+               ),
+               InkWell(
+                 onTap: ()  {},
+                 child: ListTile(
+                   title : 
+                  new Text("SECURITE INFORMATIQUE", style: TextStyle(fontSize: 15, color: Colors.white),),
+                  leading: Icon(Icons.school, color: Colors.amber,),
+                 )
+                 
+               ),
+               Divider(
+                 color: Colors.white,
+                
+               ),
+               InkWell(
+                 onTap: ()  {},
+                 child: ListTile(
+                   title : 
+                  new Text("INFOGRAPHIE", style: TextStyle(fontSize: 15, color: Colors.white),),
+                  leading: Icon(Icons.school, color: Colors.amber,),
+                 )
+                 
+               ),
+               Divider(
+                 color: Colors.white,
+                
+               ),
+               InkWell(
+                 onTap: ()  {},
+                 child: ListTile(
+                   title : 
+                  new Text("COMMUNICATION DIGITALE", style: TextStyle(fontSize: 15, color: Colors.white),),
+                  leading: Icon(Icons.school, color: Colors.amber,),
+                 )
+                 
+               ),
+               
+
+          ],
+        ),
+      ),
       body: Center(
-        child: Column(
-          children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  child: Image.network('https://st.depositphotos.com/1756445/4385/i/600/depositphotos_43853619-stock-photo-word-cloud-programming-languages-or.jpg'),
-                ),
-              ),
-              SizedBox(height: 10),
-              Text("CATEGORIES", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-              SizedBox(height: 10),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        child: Column(
-                          children: [
-                            Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7EkPJI6Zut11YNA3K3L-uHvUA60kTtiBkQ&usqp=CAU', height: 50,)
-              
-                        ]),
-                      ),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Enzxmcp_UfTtOBsI5UOa-knRcQpSZWEG_SJPiS3ifR9zITmtmr5p_0ojX6tR9q0kdS8&usqp=CAU',height: 50,),
-                      
-                    ),
-                    SizedBox(width:20 ,),
-                    Container(
-                      child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa2oIFTrEFgWncsPbQrcUjNjUocOlK4PQgznNsMpi9idvBal0EW0bTMo3g2cJvndGxDEw&usqp=CAU',height: 50,),
-                    
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcanZt-rLbbtYVBZfMEBSfQg1DynkXes_eNtQDCY7OSh7SsRw6lF0qO_2jHTwvcd9ssO0&usqp=CAU", height: 50,),
-                    )
-              
-                  ],
-                ),
-              ),
-              SizedBox(height: 20,),
-              Text("TRENDING COURSES", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-              SizedBox(height: 20,),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          height: 100,
-                          width: 200,
-                          child: Image.network('https://previews.123rf.com/images/bialasiewicz/bialasiewicz1603/bialasiewicz160301780/54176876-schuss-aus-einer-gruppe-von-fokussierten-studenten-in-einem-computerraum.jpg'),
-                          
-                        ),
-                        Text('Cours en presentiel'),
-                      ],
-                    ),
-                     Column(
-                      children: [
-                        Container(
-                          height: 100,
-                          width: 200,
-                          child: Image.network('https://previews.123rf.com/images/bialasiewicz/bialasiewicz1603/bialasiewicz160301780/54176876-schuss-aus-einer-gruppe-von-fokussierten-studenten-in-einem-computerraum.jpg'),
-                          
-                        ),
-                        Text('Cours en ligne'),
-                      ],
-                    ),
-                     Column(
-                      children: [
-                        Container(
-                          height: 100,
-                          width: 200,
-                          child: Image.network('https://previews.123rf.com/images/bialasiewicz/bialasiewicz1603/bialasiewicz160301780/54176876-schuss-aus-einer-gruppe-von-fokussierten-studenten-in-einem-computerraum.jpg'),
-                          
-                        ),
-                        Text('Cours en presentiel'),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20,),
-              Text('sffddsfdgdsdggqsdf', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Container(
+                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMVCtGnkDucIA0X84Yonbapit9Bc3ThEfuQ&usqp=CAU')),
+            ],),
+        )),
 
-
-          ]
-          ,)
-          ),
+      
       
     );
   }
