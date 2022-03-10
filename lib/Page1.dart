@@ -14,7 +14,7 @@ class _Page1State extends State<Page1> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.black,
-        title: Text("PROGRAMMATION", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+        title: Text("PLATEFORME DIGITALE", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
         centerTitle: true,
       
       ),
@@ -23,12 +23,15 @@ class _Page1State extends State<Page1> {
         child: ListView(
           children: <Widget> [
             new UserAccountsDrawerHeader(
-              accountName: Text('Jean_Philippe'),
+              accountName: Text('Jean_Philippe KOUADIO'),
                accountEmail: Text('lordjeepy@gmail.com'),
                currentAccountPicture:  GestureDetector(                                                                                                                                                                                                                                                         
-                 child: CircleAvatar(backgroundColor: Colors.white,
+                 child: CircleAvatar(
+                   backgroundColor: Colors.white,
                  child: Icon(Icons.person,
-                 color: Colors.black,),),
+                 color: Colors.black,
+                 ),
+                 ),
 
                ),
                ),
@@ -104,9 +107,16 @@ class _Page1State extends State<Page1> {
           child: Column(
             children: [
               Container(
-                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMVCtGnkDucIA0X84Yonbapit9Bc3ThEfuQ&usqp=CAU')),
-            ],),
-        )),
+                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMVCtGnkDucIA0X84Yonbapit9Bc3ThEfuQ&usqp=CAU', fit: BoxFit.fill),
+                ),
+
+
+                
+                
+            ],
+            ),
+        ),
+        ),
 
       
       
