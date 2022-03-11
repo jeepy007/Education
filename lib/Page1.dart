@@ -23,7 +23,7 @@ class _Page1State extends State<Page1> {
         child: ListView(
           children: <Widget> [
             new UserAccountsDrawerHeader(
-              accountName: Text('Jean_Philippe KOUADIO'),
+              accountName: Text('Jean-Philippe KOUADIO'),
                accountEmail: Text('lordjeepy@gmail.com'),
                currentAccountPicture:  GestureDetector(                                                                                                                                                                                                                                                         
                  child: CircleAvatar(
@@ -107,8 +107,10 @@ class _Page1State extends State<Page1> {
           child: Column(
             children: [
               Container(
-                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMVCtGnkDucIA0X84Yonbapit9Bc3ThEfuQ&usqp=CAU', fit: BoxFit.fill),
+                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVS0d0J7N4Gif-kLaAG_DK4Ow_tDEZtamJ9Q&usqp=CAU', fit: BoxFit.fill                                                                                       ),
                 ),
+                SizedBox(height: 20,),
+                Text("LES SPECIALITES", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
 
 
                 
