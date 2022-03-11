@@ -110,7 +110,72 @@ class _Page1State extends State<Page1> {
                 child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVS0d0J7N4Gif-kLaAG_DK4Ow_tDEZtamJ9Q&usqp=CAU', fit: BoxFit.fill                                                                                       ),
                 ),
                 SizedBox(height: 20,),
-                Text("LES SPECIALITES", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
+                Text("LES SPECIALITES", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+               
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            FlatButton(onPressed: (() {
+                              
+                            }), 
+                              child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1YGstEs_0-d3X8H4O533jPkwG2bL796jMjec9fl-vptKM3lT4NVxjZwNLQhK6f4KJwA&usqp=CAU',height: 50,)
+                              ),
+                
+                        ]),
+                      ),
+                      SizedBox(width: 20),
+                  Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        FlatButton(onPressed: (() {
+                          
+                        }), 
+                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUidNeRg6kI7P_9oi61rzWM2mn-hyb6rOTq7OfuSdaOv1wugnNe_Ho44MbXY7dHyIVDb8&usqp=CAU',height: 100,)
+                          ),
+                
+                    ]),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        FlatButton(onPressed: (() {
+                          
+                        }), 
+                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNWWHSeu4C8YKpfLeLrbRGAlTYg3l6F6U6Z1N_-6ASku8qhzcte87zViqmEXeikze5q6o&usqp=CAU',height: 50,)
+                          ),
+                
+                    ]),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        FlatButton(onPressed: (() {
+                          
+                        }), 
+                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQupsClh1SHGlD1X8Z3QNFk7WpUbOMHFbN91Q&usqp=CAU',height: 50,)
+                          ),
+                
+                    ]),
+                  ),
+                
+                
+                
+                
+                    ],
+                  ),
+                ),
+                
+
 
 
                 
