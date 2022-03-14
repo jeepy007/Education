@@ -167,19 +167,19 @@ class _Page1State extends State<Page1> {
                 
                     ]),
                   ),
-                
-                
-                
-                
                     ],
                   ),
                 ),
-                
+               SizedBox(height: 10),
+               Row(
+                 children: [
+                   Text('Top', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                   SizedBox(width: 200),
+                   Text('Voir plus', style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
+                 ],
+               )
 
-
-
-                
-                
+                   
             ],
             ),
         ),

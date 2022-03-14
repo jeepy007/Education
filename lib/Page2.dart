@@ -18,8 +18,6 @@ class _Page2State extends State<Page2> {
         backgroundColor: Colors.amber,
       ),
 
-      drawer: Drawer(),
-
       body: SingleChildScrollView(
         child:Padding(
           padding: const EdgeInsets.all(8.0),
