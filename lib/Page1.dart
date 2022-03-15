@@ -1,3 +1,4 @@
+import 'package:education/Page2.dart';
 import 'package:flutter/material.dart';
 
 class Page1 extends StatefulWidget {
@@ -174,10 +175,78 @@ class _Page1State extends State<Page1> {
                Row(
                  children: [
                    Text('Top', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                   SizedBox(width: 200),
+                   SizedBox(width: 280),
                    Text('Voir plus', style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
                  ],
-               )
+               ),
+               SizedBox(height: 20,),
+               SingleChildScrollView(
+                 scrollDirection: Axis.horizontal,
+                 child: Row(
+                   children: [
+                     Padding(
+                       padding: const EdgeInsets.all(8.0),
+                       child: Container(
+                         child: Column(
+                           children: [
+                             InkWell(
+                               onTap: () {
+                                  Navigator.push(
+                                      context,
+                                          MaterialPageRoute(builder: (context) => Page2()),
+                                       );
+                                
+                                 
+                               },
+                               child: Container(
+                                 height: 180,
+                                 width: 200,
+                                
+                                 child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJQPmZRlhJq9lDLfE5nXlZfWk9w5uN-m_yA&usqp=CAU',fit: BoxFit.fill,),
+                                 
+                                            
+                               ),
+                             ),
+                             Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),),
+                              
+                                     
+                         ]),
+                       ),
+                     ),
+                     SizedBox(width: 20,),
+                      Container(
+                   child: Column(
+                     children: [
+                       InkWell(
+                         onTap: () {
+                            Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => Page2()),
+  );
+                           
+                         },
+                         child: Container(
+                           height: 180,
+                           width: 200,
+                          
+                           child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0QLW7gs5toHlyeQ-9ZNCXjpp4OgbyTOisuw&usqp=CAU',fit: BoxFit.fill,),
+                                      
+                         ),
+                       ),
+                       Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),), 
+                       SizedBox(width: 20,),
+               
+               
+               
+                   ]),
+                 ),
+               
+               
+               
+                   ],
+                 ),
+               ),
+               
 
                    
             ],
