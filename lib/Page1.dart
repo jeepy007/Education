@@ -1,3 +1,5 @@
+
+
 import 'package:education/Page2.dart';
 import 'package:flutter/material.dart';
 
@@ -105,152 +107,160 @@ class _Page1State extends State<Page1> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              Container(
-                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVS0d0J7N4Gif-kLaAG_DK4Ow_tDEZtamJ9Q&usqp=CAU', fit: BoxFit.fill                                                                                       ),
-                ),
-                SizedBox(height: 20,),
-                Text("LES SPECIALITES", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-               
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              children: [
+                Container(
+                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVS0d0J7N4Gif-kLaAG_DK4Ow_tDEZtamJ9Q&usqp=CAU', fit: BoxFit.fill                                                                                       ),
+                  ),
+                  SizedBox(height: 20,),
+                  Column(
                     children: [
-                      Container(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            FlatButton(onPressed: (() {
-                              
-                            }), 
-                              child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1YGstEs_0-d3X8H4O533jPkwG2bL796jMjec9fl-vptKM3lT4NVxjZwNLQhK6f4KJwA&usqp=CAU',height: 50,)
-                              ),
-                
-                        ]),
-                      ),
-                      SizedBox(width: 20),
-                  Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        FlatButton(onPressed: (() {
-                          
-                        }), 
-                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUidNeRg6kI7P_9oi61rzWM2mn-hyb6rOTq7OfuSdaOv1wugnNe_Ho44MbXY7dHyIVDb8&usqp=CAU',height: 100,)
-                          ),
-                
-                    ]),
-                  ),
-                  SizedBox(width: 20),
-                  Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        FlatButton(onPressed: (() {
-                          
-                        }), 
-                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNWWHSeu4C8YKpfLeLrbRGAlTYg3l6F6U6Z1N_-6ASku8qhzcte87zViqmEXeikze5q6o&usqp=CAU',height: 50,)
-                          ),
-                
-                    ]),
-                  ),
-                  SizedBox(width: 20),
-                  Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        FlatButton(onPressed: (() {
-                          
-                        }), 
-                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQupsClh1SHGlD1X8Z3QNFk7WpUbOMHFbN91Q&usqp=CAU',height: 50,)
-                          ),
-                
-                    ]),
-                  ),
+                      Text("Un apprentissage qui vous ressemble", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                      SizedBox(height: 10,),
+                      Text('Des compétences pour toujours. Nous vous accompagnons dans vos prémiers pas.'),
+
+                    SizedBox(height: 20),
+                    Text('Une large sélection de cours', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                    SizedBox(height: 20),
+                    Text("Choississez parmi 183000 vidéos de cours en ligne. De nouveaux cours sont ajoutés tous les mois."),
                     ],
                   ),
-                ),
-               SizedBox(height: 10),
-               Row(
-                 children: [
-                   Text('Top', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                   SizedBox(width: 280),
-                   Text('Voir plus', style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
-                 ],
-               ),
-               SizedBox(height: 20,),
-               SingleChildScrollView(
-                 scrollDirection: Axis.horizontal,
-                 child: Row(
-                   children: [
-                     Padding(
-                       padding: const EdgeInsets.all(8.0),
-                       child: Container(
-                         child: Column(
-                           children: [
-                             InkWell(
-                               onTap: () {
-                                  Navigator.push(
-                                      context,
-                                          MaterialPageRoute(builder: (context) => Page2()),
-                                       );
-                                
-                                 
-                               },
-                               child: Container(
-                                 height: 180,
-                                 width: 200,
-                                
-                                 child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJQPmZRlhJq9lDLfE5nXlZfWk9w5uN-m_yA&usqp=CAU',fit: BoxFit.fill,),
-                                 
-                                            
-                               ),
-                             ),
-                             Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),),
-                              
-                                     
-                         ]),
-                       ),
-                     ),
-                     SizedBox(width: 20,),
-                      Container(
-                   child: Column(
-                     children: [
-                       InkWell(
-                         onTap: () {
-                            Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => Page2()),
-  );
-                           
-                         },
-                         child: Container(
-                           height: 180,
-                           width: 200,
+                 
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        FlatButton(onPressed:() {
                           
-                           child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0QLW7gs5toHlyeQ-9ZNCXjpp4OgbyTOisuw&usqp=CAU',fit: BoxFit.fill,),
-                                      
-                         ),
-                       ),
-                       Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),), 
-                       SizedBox(width: 20,),
-               
-               
-               
-                   ]),
-                 ),
-               
-               
-               
+                        },  child:Text('Programmation web', style: TextStyle(fontSize: 20),)
+                        ),
+                        SizedBox(width: 10,),
+                         FlatButton(onPressed:() {
+                          
+                        },  child:Text('Programmation mobile', style: TextStyle(fontSize: 20),)
+                        ),
+                         FlatButton(onPressed:() {
+                          
+                        },  child:Text('Sécurité informatique', style: TextStyle(fontSize: 20),)
+                        ),
+                         FlatButton(onPressed:() {
+                          
+                        },  child:Text('Infographie', style: TextStyle(fontSize: 20),)
+                        ),
+                         FlatButton(onPressed:() {
+                          
+                        },  child:Text('Communication Digitale', style: TextStyle(fontSize: 20),)
+                        ),
+                      ],
+                    ),
+                  ),
+                 SizedBox(height: 10),
+
+                 Container(
+                   height: 50,
+                   width: 300,
+                   decoration: BoxDecoration(
+                    
+                     
+                    ),
+                   child: Text('Créer des sites web et des applications avec nos de dévéloppement web.Developpez nos opportunités de carrière avec Flutter'), 
+                   
+                   ),
+                   OutlineButton(onPressed: (() {
+                     
+                   }), child: Text('Découvrez Flutter'),
+                   ),
+                 Row(
+                   children: [
+                     Text('Top', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                     SizedBox(width: 280),
+                     Text('Voir plus', style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
                    ],
                  ),
-               ),
-               
-
-                   
-            ],
-            ),
+                 SizedBox(height: 20,),
+                 SingleChildScrollView(
+                   scrollDirection: Axis.horizontal,
+                   child: Row(
+                     children: [
+                       Padding(
+                         padding: const EdgeInsets.all(8.0),
+                         child: Container(
+                           child: Column(
+                             children: [
+                               InkWell(
+                                 onTap: () {
+                                    Navigator.push(
+                                        context,
+                                            MaterialPageRoute(builder: (context) => Page2()),
+                                         );
+                                  
+                                   
+                                 },
+                                 child: Container(
+                                   height: 180,
+                                   width: 200,
+                                  
+                                   child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJQPmZRlhJq9lDLfE5nXlZfWk9w5uN-m_yA&usqp=CAU',fit: BoxFit.fill,),
+                                   
+                                              
+                                 ),
+                               ),
+                               Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),),
+                                
+                                       
+                           ]),
+                         ),
+                       ),
+                       SizedBox(width: 20,),
+                        Container(
+                     child: Column(
+                       children: [
+                         InkWell(
+                           onTap: () {
+                              Navigator.push(
+                                    context,
+                                  MaterialPageRoute(builder: (context) => Page2()),
+                                     );
+                             
+                           },
+                           child: Container(
+                             height: 180,
+                             width: 200,
+                            
+                             child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0QLW7gs5toHlyeQ-9ZNCXjpp4OgbyTOisuw&usqp=CAU',fit: BoxFit.fill,),
+                                        
+                           ),
+                         ),
+                         Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),), 
+                         SizedBox(width: 20,),
+                     ]),
+                   ),
+                     ],
+                   ),
+                 ),
+                 Text("LEÇONS", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  SizedBox(height: 20,),
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 180,
+                          width: 200,
+                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiISk7S6JaJiCWC1Cwy-QEaFKLipyDmCOvDA&usqp=CAU'),
+                          
+          
+                        )
+          
+                    ]),
+                  )
+                 
+          
+                     
+              ],
+              ),
+          ),
         ),
         ),
 
