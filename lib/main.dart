@@ -3,7 +3,7 @@ import 'package:education/Page2.dart';
 import 'package:education/splashscreen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
+                                
 void main() {
   runApp(const MyApp());
 }

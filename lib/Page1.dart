@@ -1,5 +1,7 @@
 
 
+import 'dart:developer';
+
 import 'package:education/Page2.dart';
 import 'package:flutter/material.dart';
 
@@ -174,8 +176,8 @@ class _Page1State extends State<Page1> {
                    ),
                  Row(
                    children: [
-                     Text('Top', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                     SizedBox(width: 280),
+                     Text('Sélection', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                     SizedBox(width: 220),
                      Text('Voir plus', style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
                    ],
                  ),
@@ -191,23 +193,20 @@ class _Page1State extends State<Page1> {
                              children: [
                                InkWell(
                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                            MaterialPageRoute(builder: (context) => Page2()),
-                                         );
-                                  
                                    
                                  },
                                  child: Container(
                                    height: 180,
                                    width: 200,
                                   
-                                   child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJQPmZRlhJq9lDLfE5nXlZfWk9w5uN-m_yA&usqp=CAU',fit: BoxFit.fill,),
+                                   child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlAJI270ZvX889ZSU3bVm9FDMfK65RLr-Ow&usqp=CAU ',fit: BoxFit.fill,),
                                    
                                               
                                  ),
                                ),
-                               Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),),
+                               Text('FLUTTER: Formation complète ', style: TextStyle(fontSize: 15),),
+                               Text('4,3  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('200000f cfa',style: TextStyle(fontSize: 20),)
                                 
                                        
                            ]),
@@ -215,48 +214,197 @@ class _Page1State extends State<Page1> {
                        ),
                        SizedBox(width: 20,),
                         Container(
-                     child: Column(
-                       children: [
-                         InkWell(
-                           onTap: () {
-                              Navigator.push(
-                                    context,
-                                  MaterialPageRoute(builder: (context) => Page2()),
-                                     );
-                             
-                           },
-                           child: Container(
-                             height: 180,
-                             width: 200,
-                            
-                             child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0QLW7gs5toHlyeQ-9ZNCXjpp4OgbyTOisuw&usqp=CAU',fit: BoxFit.fill,),
-                                        
-                           ),
+                           child: Column(
+                             children: [
+                               InkWell(
+                                 onTap: () {
+                                   
+                                 },
+                                 child: Container(
+                                   height: 180,
+                                   width: 200,
+                                  
+                                   child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNE8hc3tPL6_G5jOMGaDwsU2uFRiUgWMRLBg&usqp=CAU ',fit: BoxFit.fill,),
+                                   
+                                              
+                                 ),
+                               ),
+                               Text('PYTHON: Formation complète ', style: TextStyle(fontSize: 15),),
+                               Text('4,2  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('200000f cfa',style: TextStyle(fontSize: 20),)
+                                
+                                       
+                           ]),
                          ),
-                         Text('FORMATION EN LIGNE', style: TextStyle(fontSize: 15),), 
-                         SizedBox(width: 20,),
-                     ]),
-                   ),
+                           Container(
+                           child: Column(
+                             children: [
+                               InkWell(
+                                 onTap: () {
+                                   
+                                 },
+                                 child: Container(
+                                   height: 180,
+                                   width: 200,
+                                  
+                                   child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmr2piHTKzjrhzGPI9CmU2yxhIOyFSoYTRwA&usqp=CAU ',fit: BoxFit.fill,),
+                                   
+                                              
+                                 ),
+                               ),
+                               Text('PHP: Formation complète ', style: TextStyle(fontSize: 15),),
+                               Text('4,4  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('200000f cfa',style: TextStyle(fontSize: 20),)
+                                
+                                       
+                           ]),
+                         ),
+                           Container(
+                           child: Column(
+                             children: [
+                               InkWell(
+                                 onTap: () {
+                                   
+                                 },
+                                 child: Container(
+                                   height: 180,
+                                   width: 200,
+                                  
+                                   child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQqxM9l3vaO_yQEuo6KLH7pu0o3Lgf_4Ofw&usqp=CAU ',fit: BoxFit.fill,),
+                                   
+                                              
+                                 ),
+                               ),
+                               Text('JAVASCRIPT: Formation complète ', style: TextStyle(fontSize: 15),),
+                               Text('4,5  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('200000f cfa',style: TextStyle(fontSize: 20),)
+                                
+                                       
+                           ]),
+                         ),
+                           Container(
+                           child: Column(
+                             children: [
+                               InkWell(
+                                 onTap: () {
+                                   
+                                 },
+                                 child: Container(
+                                   height: 180,
+                                   width: 200,
+                                  
+                                   child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNE8hc3tPL6_G5jOMGaDwsU2uFRiUgWMRLBg&usqp=CAU ',fit: BoxFit.fill,),
+                                   
+                                              
+                                 ),
+                               ),
+                               Text('FLUTTER: Formation complète ', style: TextStyle(fontSize: 15),),
+                               Text('4,3  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('200000f cfa',style: TextStyle(fontSize: 20),)
+                                
+                                       
+                           ]),
+                         ),
+                     
                      ],
                    ),
                  ),
-                 Text("LEÇONS", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                
                   SizedBox(height: 20,),
-                  Container(
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 180,
-                          width: 200,
-                          child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiISk7S6JaJiCWC1Cwy-QEaFKLipyDmCOvDA&usqp=CAU'),
+                  Text('Les meilleures ventes', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  SizedBox(height: 20),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: Column(
+                              children: [
+                                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Xg1cBYwd0JRR2Sfgm7ybSoEjfSbp9_tDiA&usqp=CAU'),
+                                Text('Microsoft Excel- Excel pour debutant', style: TextStyle(fontSize: 15),),
+                                Text('Kyle Pew, office newb', style: TextStyle(fontSize: 15, color: Colors.black.withOpacity(0.5)), ),
+                                Text('4,7 *****', style: TextStyle(fontSize: 20,color: Colors.blue),),
+                                Text('100000f cfa', style: TextStyle(fontSize: 20),),
+                                ElevatedButton(onPressed: (() {
+                                  
+                                }), child: Text('Meilleure vente')
+                                ),
+                              ]
+                              ),
+                          ),
+                          SizedBox(width: 20),
+                          Container(
+                            child: Column(
+                              children: [
+                                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAseeAvEDfGEL8mMqfTF8xG21sP5ue3jqsg&usqp=CAU'),
+                                Text('the complete 2022 web development', style: TextStyle(fontSize: 15),),
+                                Text('Kyle Pew, office newb', style: TextStyle(fontSize: 15, color: Colors.black.withOpacity(0.5)), ),
+                                Text('4,6 *****', style: TextStyle(fontSize: 20,color: Colors.blue),),
+                                Text('100000f cfa', style: TextStyle(fontSize: 20),),
+                                ElevatedButton(onPressed: (() {
+                                  
+                                }), child: Text('Meilleure vente')
+                                ),
+                              ]
+                              ),
+                          ),
+                           SizedBox(width: 20),
+                          Container(
+                            child: Column(
+                              children: [
+                                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSP62VENfyiUupgaXCaVsKmzSQJ_cz-jAaw&usqp=CAU'),
+                                Text('The complete JavaScript courses', style: TextStyle(fontSize: 15),),
+                                Text('Kyle Pew, office newb', style: TextStyle(fontSize: 15, color: Colors.black.withOpacity(0.5)), ),
+                                Text('4,5 *****', style: TextStyle(fontSize: 20,color: Colors.blue),),
+                                Text('100000f cfa', style: TextStyle(fontSize: 20),),
+                                ElevatedButton(onPressed: (() {
+                                  
+                                }), child: Text('Meilleure vente')
+                                ),
+                              ]
+                              ),
+                          ),
+                           SizedBox(width: 20),
+                          Container(
+                            child: Column(
+                              children: [
+                                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvxVaFg2gT4HszBIDsbqPU__Ozl6ZYmGWaw&usqp=CAU'),
+                                Text('Microsoft Excel- Excel pour debutant', style: TextStyle(fontSize: 15),),
+                                Text('Kyle Pew, office newb', style: TextStyle(fontSize: 15, color: Colors.black.withOpacity(0.5)), ),
+                                Text('4,8 *****', style: TextStyle(fontSize: 20,color: Colors.blue),),
+                                Text('100000f cfa', style: TextStyle(fontSize: 20),),
+                                ElevatedButton(onPressed: (() {
+                                  
+                                }), child: Text('Meilleure vente')
+                                ),
+                              ]
+                              ),
+                          ),
+                           SizedBox(width: 20),
+                          Container(
+                            child: Column(
+                              children: [
+                                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQj_aAU72lKt056nCON03OO3tEj_z6USyncw&usqp=CAU'),
+                                Text('Microsoft Excel- Excel pour debutant', style: TextStyle(fontSize: 15),),
+                                Text('Kyle Pew, office newb', style: TextStyle(fontSize: 15, color: Colors.black.withOpacity(0.5)), ),
+                                Text('4,9 *****', style: TextStyle(fontSize: 20,color: Colors.blue),),
+                                Text('100000f cfa', style: TextStyle(fontSize: 20),),
+                                ElevatedButton(onPressed: (() {
+                                  
+                                }), child: Text('Meilleure vente')
+                                ),
+                              ]
+                              ),
+                          ),
+                           SizedBox(width: 20),
+                  
                           
-          
-                        )
-          
-                    ]),
-                  )
-                 
-          
+                            
+                      ]),
+                    ),
+                  ),
+                  
                      
               ],
               ),
