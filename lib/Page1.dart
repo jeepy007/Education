@@ -2,6 +2,7 @@
 
 import 'dart:developer';
 
+import 'package:education/Flutter.dart';
 import 'package:education/Page2.dart';
 import 'package:flutter/material.dart';
 
@@ -171,6 +172,10 @@ class _Page1State extends State<Page1> {
                    
                    ),
                    OutlineButton(onPressed: (() {
+                     Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const Flutter()),
+  );
                      
                    }), child: Text('Découvrez Flutter'),
                    ),
