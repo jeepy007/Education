@@ -198,6 +198,10 @@ class _Page1State extends State<Page1> {
                              children: [
                                InkWell(
                                  onTap: () {
+                                    Navigator.push(
+                                   context,
+                                      MaterialPageRoute(builder: (context) => const Page2()),
+                                );
                                    
                                  },
                                  child: Container(
@@ -223,6 +227,10 @@ class _Page1State extends State<Page1> {
                              children: [
                                InkWell(
                                  onTap: () {
+                                    Navigator.push(
+                                                 context,
+                                     MaterialPageRoute(builder: (context) => const Page2()),
+                               );
                                    
                                  },
                                  child: Container(
@@ -246,6 +254,10 @@ class _Page1State extends State<Page1> {
                              children: [
                                InkWell(
                                  onTap: () {
+                                    Navigator.push(
+                                 context,
+                                   MaterialPageRoute(builder: (context) => const Page2()),
+                               );
                                    
                                  },
                                  child: Container(
@@ -269,6 +281,10 @@ class _Page1State extends State<Page1> {
                              children: [
                                InkWell(
                                  onTap: () {
+                                    Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const Page2()),
+                               );
                                    
                                  },
                                  child: Container(
@@ -292,6 +308,10 @@ class _Page1State extends State<Page1> {
                              children: [
                                InkWell(
                                  onTap: () {
+                                    Navigator.push(
+                                     context,
+                                    MaterialPageRoute(builder: (context) => const Page2()),
+                                    );
                                    
                                  },
                                  child: Container(

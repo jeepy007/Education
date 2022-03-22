@@ -23,9 +23,13 @@ class _FlutterState extends State<Flutter> {
             SizedBox(height: 20),
             Text('Cours sur le sujet Flutter', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
              SizedBox(height: 20,),
+            Text('Le sujet Flutter est associé aux sujets Développement Informatique et logiciels.',style: TextStyle(fontSize: 15),),
+
              
 
-        ],)),
+        ]
+        ,)
+        ),
       
     );
   }

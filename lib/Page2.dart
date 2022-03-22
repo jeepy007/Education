@@ -15,7 +15,7 @@ class _Page2State extends State<Page2> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.blue,
       ),
 
       body: SingleChildScrollView(
