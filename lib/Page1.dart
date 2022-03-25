@@ -42,7 +42,9 @@ class _Page1State extends State<Page1> {
                ),
                ),
                InkWell(
-                 onTap: ()  {},
+                 onTap: ()  {
+                    
+                 },
                  child: ListTile(
                    title : 
                   new Text("PROGRAMMATION WEB", style: TextStyle(fontSize: 15, color: Colors.white),),
@@ -107,9 +109,8 @@ class _Page1State extends State<Page1> {
           ],
         ),
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
+      body: Center(  
+          
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(
@@ -120,39 +121,43 @@ class _Page1State extends State<Page1> {
                   SizedBox(height: 20,),
                   Column(
                     children: [
-                      Text("Un apprentissage qui vous ressemble", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                      Text("Un apprentissage qui vous ressemble", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.blue),),
                       SizedBox(height: 10,),
                       Text('Des compétences pour toujours. Nous vous accompagnons dans vos prémiers pas.'),
 
                    
                     ],
                   ),
+                  SizedBox(height: 20),
                  
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        FlatButton(onPressed:() {
+                        ElevatedButton(onPressed:() {
                           
-                        },  child:Text('Programmation web', style: TextStyle(fontSize: 20),)
+                        },  child:Text('Programmation web', style: TextStyle(fontSize: 20, color: Colors.yellow),)
                         ),
                         SizedBox(width: 10,),
-                         FlatButton(onPressed:() {
+                        ElevatedButton(onPressed:() {
                           
-                        },  child:Text('Programmation mobile', style: TextStyle(fontSize: 20),)
+                        },  child:Text('Programmation mobile', style: TextStyle(fontSize: 20, color: Colors.yellow),)
                         ),
-                         FlatButton(onPressed:() {
+                         SizedBox(width: 10,),
+                        ElevatedButton(onPressed:() {
                           
-                        },  child:Text('Sécurité informatique', style: TextStyle(fontSize: 20),)
+                        },  child:Text('Sécurité informatique', style: TextStyle(fontSize: 20, color: Colors.yellow),)
                         ),
-                         FlatButton(onPressed:() {
+                         SizedBox(width: 10,),
+                        ElevatedButton(onPressed:() {
                           
-                        },  child:Text('Infographie', style: TextStyle(fontSize: 20),)
+                        },  child:Text('Infographie', style: TextStyle(fontSize: 20, color: Colors.yellow),)
                         ),
-                         FlatButton(onPressed:() {
+                         SizedBox(width: 10,),
+                         ElevatedButton(onPressed:() {
                           
-                        },  child:Text('Communication Digitale', style: TextStyle(fontSize: 20),)
-                        ),
+                        },  child:Text('Communication Digitale', style: TextStyle(fontSize: 20, color: Colors.yellow),)
+                        ), SizedBox(width: 10,),
                       ],
                     ),
                   ),
@@ -178,7 +183,7 @@ class _Page1State extends State<Page1> {
                    ),
                  Row(
                    children: [
-                     Text('Sélection', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                     Text('Sélection', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold, color: Colors.blue),),
                      SizedBox(width: 220),
                      Text('Voir plus', style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
                    ],
@@ -211,7 +216,7 @@ class _Page1State extends State<Page1> {
                                  ),
                                ),
                                Text('FLUTTER: Formation complète ', style: TextStyle(fontSize: 15),),
-                               Text('4,3  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('4,3  ******', style: TextStyle(fontSize: 20, color: Colors.yellow),),
                                Text('200000f cfa',style: TextStyle(fontSize: 20),)
                                 
                                        
@@ -240,7 +245,7 @@ class _Page1State extends State<Page1> {
                                  ),
                                ),
                                Text('PYTHON: Formation complète ', style: TextStyle(fontSize: 15),),
-                               Text('4,2  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('4,2  ******', style: TextStyle(fontSize: 20, color: Colors.yellow),),
                                Text('200000f cfa',style: TextStyle(fontSize: 20),)
                                 
                                        
@@ -267,7 +272,7 @@ class _Page1State extends State<Page1> {
                                  ),
                                ),
                                Text('PHP: Formation complète ', style: TextStyle(fontSize: 15),),
-                               Text('4,4  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('4,4  ******', style: TextStyle(fontSize: 20, color: Colors.yellow),),
                                Text('200000f cfa',style: TextStyle(fontSize: 20),)
                                 
                                        
@@ -294,7 +299,7 @@ class _Page1State extends State<Page1> {
                                  ),
                                ),
                                Text('JAVASCRIPT: Formation complète ', style: TextStyle(fontSize: 15),),
-                               Text('4,5  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('4,5  ******', style: TextStyle(fontSize: 20, color: Colors.yellow),),
                                Text('200000f cfa',style: TextStyle(fontSize: 20),)
                                 
                                        
@@ -321,7 +326,7 @@ class _Page1State extends State<Page1> {
                                  ),
                                ),
                                Text('FLUTTER: Formation complète ', style: TextStyle(fontSize: 15),),
-                               Text('4,3  ******', style: TextStyle(fontSize: 20, color: Colors.blue),),
+                               Text('4,3  ******', style: TextStyle(fontSize: 20, color: Colors.yellow),),
                                Text('200000f cfa',style: TextStyle(fontSize: 20),)
                                 
                                        
@@ -333,7 +338,7 @@ class _Page1State extends State<Page1> {
                  ),
                 
                   SizedBox(height: 20,),
-                  Text('Les meilleures ventes', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Text('Les meilleures ventes', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.blue),),
                   SizedBox(height: 20),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
@@ -432,10 +437,10 @@ class _Page1State extends State<Page1> {
               ),
           ),
         ),
-        ),
+        );
 
       
       
-    );
+  
   }
 }
