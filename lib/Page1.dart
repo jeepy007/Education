@@ -115,7 +115,7 @@ class _Page1State extends State<Page1> {
             child: Column(
               children: [
                 Container(
-                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVS0d0J7N4Gif-kLaAG_DK4Ow_tDEZtamJ9Q&usqp=CAU', fit: BoxFit.fill                                                                                       ),
+                  child: Image.asset('images/image6.jpeg', fit: BoxFit.fill                                                                                       ),
                   ),
                   SizedBox(height: 20,),
                   Column(
@@ -124,10 +124,7 @@ class _Page1State extends State<Page1> {
                       SizedBox(height: 10,),
                       Text('Des compétences pour toujours. Nous vous accompagnons dans vos prémiers pas.'),
 
-                    SizedBox(height: 20),
-                    Text('Une large sélection de cours', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    SizedBox(height: 20),
-                    Text("Choississez parmi 183000 vidéos de cours en ligne. De nouveaux cours sont ajoutés tous les mois."),
+                   
                     ],
                   ),
                  

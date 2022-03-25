@@ -12,6 +12,7 @@ class _FlutterState extends State<Flutter> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         elevation: 0,
         title: Text('Flutter', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold), ),
         centerTitle: true,
