@@ -19,7 +19,7 @@ class _Page1State extends State<Page1> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.blue,
         title: Text("PLATEFORME DIGITALE", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
         centerTitle: true,
       
